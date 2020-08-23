@@ -1,7 +1,11 @@
 <template>
     <div>
         <header>
+            <div>
+                <h3 class="text-center">エチュ〜どん！</h3>
+            </div>
             <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
                 <router-link to="/" class="navbar-brand">ホーム</router-link>
                 <button 
                     class="navbar-toggler" 
@@ -11,7 +15,7 @@
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <router-link to='/register'>ユーザー登録</router-link>
@@ -20,6 +24,7 @@
                             <router-link to='/login'>ログイン</router-link>
                         </li>
                     </ul>
+                </div>
                 </div>
             </nav>
         </header>
