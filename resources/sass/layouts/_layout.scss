@@ -1,8 +1,15 @@
 html{
     position:relative;
     min-height:100%;
+    padding-bottom:120px;
+    box-sizing:border-box;
 }
 
 main{
     margin-top:20px;
+}
+
+li{
+    margin-right:10px;
+    list-style: none;
 }

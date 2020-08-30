@@ -12,7 +12,9 @@
                     </div>
                 </div>
 
-            <column v-bind:column="column1" />
+                <column v-bind:column="column1" />
+                <column v-bind:column="column2" />
+
                         
             </div>
             
@@ -42,6 +44,14 @@ export default {
                 button:{
                     message:"設定一覧へ",
                     url:"/scenario",
+                },
+            },
+            column2:{
+                title:"モードについて",
+                content:"これはモードの本文です",
+                button:{
+                    message:"モード選択へ",
+                    url:"/mode",
                 },
             },
             

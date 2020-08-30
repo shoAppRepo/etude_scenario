@@ -1,4 +1,20 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);/*!
+@import url(https://fonts.googleapis.com/css?family=Nunito);html {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 120px;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 20px;
+}
+
+li {
+  margin-right: 10px;
+  list-style: none;
+}
+
+/*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
@@ -10643,15 +10659,6 @@ a.text-dark:focus {
   }
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-main {
-  margin-top: 20px;
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -10671,7 +10678,6 @@ button {
 }
 
 .column {
-  width: 50%;
   margin-top: 20px;
   border-top: 1px solid red;
   border-bottom: 1px dotted red;

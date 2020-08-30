@@ -20,3 +20,14 @@ Route::get('/', function () {
 Auth::routes();
 
 
+Route::get('/scenario',function(){
+    return view('scenario.index');
+});
+
+Route::get('/mode',function(){
+    return view('mode.index');
+});
+
+Route::get('/allSelect',function(){
+    return view('mode.allSelect');
+});

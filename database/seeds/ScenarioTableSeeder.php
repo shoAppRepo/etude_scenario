@@ -1,0 +1,131 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class ScenarioTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('themes')->truncate();
+
+        DB::table('themes')->insert([
+            [
+                'theme'=>"家族愛",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'theme'=>"家族",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],[
+                'theme'=>"友よ!",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'theme'=>"冒険",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'theme'=>"学校生活",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+        ]);
+
+
+        DB::table('places')->truncate();
+        DB::table('places')->insert([
+            [
+                'place'=>"学校",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'place'=>"自宅",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'place'=>"商店街",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'place'=>"デパート",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'place'=>"公園",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+        ]);
+
+        DB::table('keywords')->truncate();
+        DB::table('keywords')->insert([
+            [
+                'keyword'=>"愛してる",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'keyword'=>"お前じゃなきゃダメだ",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'keyword'=>"助けてくれ",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'keyword'=>"ヒョエー",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'keyword'=>"なんでやねん",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+        ]);
+        
+        DB::table('characters')->truncate();
+        DB::table('characters')->insert([
+            [
+                'character'=>"元気",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'character'=>"内気",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'character'=>"ヤンデレ",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'character'=>"高飛車",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+            [
+                'character'=>"泣き虫",
+                'created_at'=>now(),
+                'updated_at'=>now(),
+            ],
+        ]);
+    }
+}

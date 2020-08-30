@@ -17,11 +17,17 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <router-link to='/register'>ユーザー登録</router-link>
                         </li>
                         <li class="nav-item">
                             <router-link to='/login'>ログイン</router-link>
+                        </li> -->
+                        <li class="nav-item">
+                            <router-link to="/scenario">設定一覧</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/mode">モード選択</router-link>
                         </li>
                     </ul>
                 </div>
@@ -36,3 +42,14 @@ export default {
     name:'HeaderNav',
 }
 </script>
+
+<style scoped>
+a{
+    color:black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:orange;
+}
+</style>
