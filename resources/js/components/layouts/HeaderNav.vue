@@ -4,7 +4,7 @@
             <div>
                 <h3 class="text-center">エチュ〜どん！</h3>
             </div>
-            <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <nav class="navbar navbar-expand-md">
                 <div class="container">
                 <router-link to="/" class="navbar-brand">ホーム</router-link>
                 <button 
@@ -26,8 +26,21 @@
                         <li class="nav-item">
                             <router-link to="/scenario">設定一覧</router-link>
                         </li>
-                        <li class="nav-item">
-                            <router-link to="/mode">モード選択</router-link>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#"          id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                モード選択
+                             </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <router-link to="/allSelect" class="dropdown-item">
+                                    全部お任せ
+                                </router-link>
+                                <router-link to="/allSelect" class="dropdown-item">
+                                    設定のみ
+                                </router-link>
+                                <router-link to="/allSelect" class="dropdown-item">
+                                    役のみ
+                                </router-link>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -45,11 +58,11 @@ export default {
 
 <style scoped>
 a{
-    color:black;
+    color:#000099;
     text-decoration: none;
 }
 
 a:hover{
-    color:orange;
+    color:#FFCC66;
 }
 </style>

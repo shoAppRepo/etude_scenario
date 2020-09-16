@@ -1,8 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css?family=Nunito');
 @import 'variables';
 @import "layouts/layout";
 @import '~bootstrap/scss/bootstrap';
 @import "layouts/footer";
+@import "layouts/header";
 @import "home";
 @import "layouts/column";
+@import "module/button";
+@import "module/card";

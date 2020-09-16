@@ -18,8 +18,12 @@
                 </select>
                 <div>
                     一括設定：
-                    <button v-on:click="startAll()">Start!</button>
-                    <button v-on:click="stopAll()">Stop!</button>
+                    <button v-on:click="startAll()" class="btnComponent btnComponent-custom01 mb-3">
+                        <span class="btnComponent-custom01-front">Start!</span>
+                    </button>
+                    <button v-on:click="stopAll()" class="btnComponent btnComponent-custom01 mb-3">
+                        <span class="btnComponent-custom01-front">Stop!</span>
+                    </button>
                 </div>
             </div>
             
@@ -28,36 +32,85 @@
                 <div class="column mx-auto col-md-8">
                     <div>
                         <h2 class="text-center">設定</h2>
-                        <h5>
-                        お題：{{themes[tId]}}
-                        </h5>
-                        <h5>場所：{{places[pId]}}</h5>
-                        <h5>制限時間：{{timeLimit}}分</h5>
-                        <div class="d-flex justify-content-around">
-                            <button v-on:click="startSetting()">Start!</button>
-                            <button v-on:click="stopSetting()">Stop!</button>
-                        </div>
+                        <section>
+                            <h5>
+                            お題：{{themes[tId]}}
+                            </h5>
+                            <h5>場所：{{places[pId]}}</h5>
+                            <h5>制限時間：{{timeLimit}}分</h5>
+                            <div class="d-flex justify-content-around">
+                                <button v-on:click="startSetting()" class="btnComponent btnComponent-custom01 mb-3">
+                                    <span class="btnComponent-custom01-front">Start!</span>
+                                </button>
+                                <button v-on:click="stopSetting()" class="btnComponent btnComponent-custom01 mb-3">
+                                    <span class="btnComponent-custom01-front">Stop!</span>
+                                </button>
+                            </div>
+                        </section>
                     </div>
                 </div>
                 
                 <!-- 配役 -->
                 <div class="column mx-auto col-md-8">
-                    <ul>
-                        <li v-for="n in number" :key="n">
-                            <h2 class="text-center">{{n}}人目</h2>
-                            <h5 class="d-flex">
-                                性格：
-                                <h5 class="character">{{characters[n]}}</h5>
-                            </h5>
-                            <h5 class="d-flex">
-                                ワード：
-                                <h5 class="keyword">{{keywords[n]}}</h5>
-                            </h5>
-                        </li>
-                    </ul>
+                    <h2 class="text-center">役</h2>
+                    <section class="row">
+                        <div v-for="n in number" :key="n">
+                                <div v-if="number === 1" class="col-12">
+                                    <div class="card text-center">
+                                        <div class="card-header">{{n}}人目</div>
+                                        <div class="card-body">
+                                            <div class="card-text">
+                                                <h5 class="d-flex justify-content-center">
+                                                    性格：
+                                                    <h5 class="character">{{characters[n]}}</h5>
+                                                </h5>
+                                                <h5 class="d-flex justify-content-center">
+                                                    ワード：
+                                                    <h5 class="keyword">{{keywords[n]}}</h5>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-else class="col-md-5">
+                                    <div class="card text-center">
+                                        <div class="card-header">{{n}}人目</div>
+                                        <div class="card-body">
+                                            <div class="card-text">
+                                                <h5 class="d-flex">
+                                                    性格：
+                                                    <h5 class="character">{{characters[n]}}</h5>
+                                                </h5>
+                                                <h5 class="d-flex">
+                                                    ワード：
+                                                    <h5 class="keyword">{{keywords[n]}}</h5>
+                                                </h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- <ul>
+                            <li v-for="n in number" :key="n">
+                                <h4 class="text-center">{{n}}人目</h4>
+                                <h5 class="d-flex">
+                                    性格：
+                                    <h5 class="character">{{characters[n]}}</h5>
+                                </h5>
+                                <h5 class="d-flex">
+                                    ワード：
+                                    <h5 class="keyword">{{keywords[n]}}</h5>
+                                </h5>
+                            </li>
+                        </ul> -->
+                    </section>
                         <div class="d-flex justify-content-around">
-                            <button v-on:click="startRole()">Start!</button>
-                            <button v-on:click="stopRole()">Stop!</button>
+                            <button v-on:click="startRole()" class="btnComponent btnComponent-custom01 mb-3">
+                                <span class="btnComponent-custom01-front">Start!</span>
+                                </button>
+                            <button v-on:click="stopRole()" class="btnComponent btnComponent-custom01 mb-3">
+                                <span class="btnComponent-custom01-front">Stop!</span>
+                            </button>
                         </div>
                 </div>
 
@@ -68,8 +121,12 @@
                         <h5>{{first}}人目の人から始めましょう!</h5>
                     </div>
                     <div v-if="number > 1" class="d-flex justify-content-around">
-                        <button v-on:click="startFirst()">Start!</button>
-                        <button v-on:click="stopFirst()">Stop!</button>
+                        <button v-on:click="startFirst()" class="btnComponent btnComponent-custom01 mb-3">
+                            <span class="btnComponent-custom01-front">Start!</span>
+                        </button>
+                        <button v-on:click="stopFirst()" class="btnComponent btnComponent-custom01 mb-3">
+                            <span class="btnComponent-custom01-front">Stop!</span>
+                        </button>
                     </div>
                 </div>
 

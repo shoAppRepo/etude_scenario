@@ -1,14 +1,12 @@
 <template>
     <div class="container">
-        <div class="column mx-auto">
-            <div>
-             <h2 class="text-center">{{column.title}}</h2>
-             <p class="text-center">{{column.content}}</p>
-             
-             <div class="d-flex align-items-end flex-column">
-                <button-vue :button="column.button" class="mt-auto" ></button-vue>
-             </div>
-            </div>
+        <div class="column mx-auto text-center">
+             <h2>{{column.title}}</h2>
+            <section>
+                <p>{{column.content}}</p>
+                
+                <button-vue :button="column.button"></button-vue>
+            </section>
         </div>
     </div>
 </template>

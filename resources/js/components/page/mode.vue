@@ -3,7 +3,7 @@
         <column v-bind:column="column1" />
         <column v-bind:column="column2" />
         <column v-bind:column="column3" />
-        <column v-bind:column="column4" />
+
 
     </div>
 </template>
@@ -20,34 +20,26 @@ export default {
         return{
             column1:{
                 title:"全部お任せモード",
-                content:"これは全部お任せモードの本文です",
+                content:"「お題、場所、制限時間、性格、ワード」をランダムに設定します",
                 button:{
                     message:"このモードを選択",
                     url:"/allSelect"
                 },
             },
             column2:{
-                title:"お題/性格モード",
-                content:"これはお題/性格モードの本文です",
+                title:"設定モード",
+                content:"「お題、場所、制限時間」をランダムに設定します",
                 button:{
                     message:"このモードを選択",
-                    url:"/theme&character"
+                    url:"/settei"
                 },
             },
             column3:{
-                title:"お題モード",
-                content:"これはお題モードの本文です",
+                title:"役モード",
+                content:"「性格、ワード、制限時間」をランダムに設定します",
                 button:{
                     message:"このモードを選択",
-                    url:"/theme"
-                },
-            },
-            column4:{
-                title:"時間制限モード",
-                content:"これは時間制限モードの本文です",
-                button:{
-                    message:"このモードを選択",
-                    url:"/timeLimit"
+                    url:"/character"
                 },
             },
         }

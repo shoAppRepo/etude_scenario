@@ -1,8 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);html {
+html {
   position: relative;
   min-height: 100%;
   padding-bottom: 120px;
   box-sizing: border-box;
+}
+
+body {
+  background-color: #CCCC99;
 }
 
 main {
@@ -10662,10 +10666,14 @@ a.text-dark:focus {
 footer {
   position: absolute;
   bottom: 0;
-  background-color: gray;
+  background: #FFCC66;
   width: 100%;
-  color: white;
+  color: #000099;
   padding: 30px 0;
+}
+
+nav {
+  background: #FFCC66;
 }
 
 .home-image {
@@ -10678,8 +10686,101 @@ button {
 }
 
 .column {
-  margin-top: 20px;
-  border-top: 1px solid red;
-  border-bottom: 1px dotted red;
+  margin-top: 30px;
+}
+
+section {
+  border-top: 5px solid #FFCC66;
+  padding-top: 10px;
+}
+
+.column-box {
+  justify-content: space-around;
+}
+
+.column-container {
+  margin-top: 10px;
+}
+
+.btnComponent {
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+.btnComponent-custom01 {
+  margin-bottom: 0.5rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+.btnComponent-custom01:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  transition: all 0.3s;
+  transform: translate3d(0, 0.75rem, -1rem);
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #FF9900;
+  box-shadow: 0 0.6rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btnComponent-custom01:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  line-height: 1;
+  position: absolute;
+  top: calc(50% - 1rem);
+  left: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.btnComponent-custom01-front {
+  position: relative;
+  display: block;
+  padding: 5px 10px;
+  color: #000099;
+  transition: all 0.3s;
+  border: 2px solid #000;
+  border-radius: inherit;
+  background: #FFCC66;
+}
+
+.btnComponent-custom01:hover {
+  transform: translate(0, 0.25rem);
+  background: #FFCC66;
+}
+
+.btnComponent-custom01:hover:before {
+  transform: translate3d(0, 0.5rem, -1rem);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.btnComponent-custom01:active {
+  transform: translate(0rem, 0.75rem);
+}
+
+.btnComponent-custom01:active:before {
+  transform: translate3d(0, 0, -1rem);
+  box-shadow: 0 0.35rem 0 0 rgba(0, 0, 0, 0.2);
 }
 

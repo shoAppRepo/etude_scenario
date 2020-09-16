@@ -4,8 +4,12 @@
             <div class="time">
                 {{formatTime}}
             </div>
-            <button v-on:click="start" v-if="!timerOn">Start</button>
-            <button v-on:click="stop" v-if="timerOn">Stop</button>
+            <button v-on:click="start" v-if="!timerOn" class="btnComponent btnComponent-custom01 mb-3">
+                <span class="btnComponent-custom01-front">Start</span>
+            </button>
+            <button v-on:click="stop" v-if="timerOn" class="btnComponent btnComponent-custom01 mb-3">
+                <span class="btnComponent-custom01-front">Stop</span>
+            </button>
         </div>
     </div>
 </template>

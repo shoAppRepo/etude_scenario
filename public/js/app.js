@@ -1970,6 +1970,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HeaderNav'
 });
@@ -1986,8 +1999,6 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_button__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/button */ "./resources/js/components/modules/button.vue");
-//
-//
 //
 //
 //
@@ -2107,6 +2118,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     button: Object
@@ -2129,6 +2146,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -2239,6 +2260,60 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2250,24 +2325,12 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       button1: {
-        message: "早速始める",
-        url: "/login"
+        message: "設定一覧へ",
+        url: "/scenario"
       },
-      column1: {
-        title: "設定について",
-        content: "これは設定の本文です",
-        button: {
-          message: "設定一覧へ",
-          url: "/scenario"
-        }
-      },
-      column2: {
-        title: "モードについて",
-        content: "これはモードの本文です",
-        button: {
-          message: "モード選択へ",
-          url: "/mode"
-        }
+      button2: {
+        message: "モード選択へ",
+        url: "/mode"
       }
     };
   }
@@ -2597,6 +2660,63 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 var random = function random(min, max) {
@@ -2764,34 +2884,26 @@ __webpack_require__.r(__webpack_exports__);
     return {
       column1: {
         title: "全部お任せモード",
-        content: "これは全部お任せモードの本文です",
+        content: "「お題、場所、制限時間、性格、ワード」をランダムに設定します",
         button: {
           message: "このモードを選択",
           url: "/allSelect"
         }
       },
       column2: {
-        title: "お題/性格モード",
-        content: "これはお題/性格モードの本文です",
+        title: "設定モード",
+        content: "「お題、場所、制限時間」をランダムに設定します",
         button: {
           message: "このモードを選択",
-          url: "/theme&character"
+          url: "/settei"
         }
       },
       column3: {
-        title: "お題モード",
-        content: "これはお題モードの本文です",
+        title: "役モード",
+        content: "「性格、ワード、制限時間」をランダムに設定します",
         button: {
           message: "このモードを選択",
-          url: "/theme"
-        }
-      },
-      column4: {
-        title: "時間制限モード",
-        content: "これは時間制限モードの本文です",
-        button: {
-          message: "このモードを選択",
-          url: "/timeLimit"
+          url: "/character"
         }
       }
     };
@@ -7306,7 +7418,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\na[data-v-662b0475]{\n    color:black;\n    text-decoration: none;\n}\na[data-v-662b0475]:hover{\n    color:orange;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-662b0475]{\n    color:#000099;\n    text-decoration: none;\n}\na[data-v-662b0475]:hover{\n    color:#FFCC66;\n}\n", ""]);
 
 // exports
 
@@ -21975,59 +22087,115 @@ var render = function() {
     _c("header", [
       _vm._m(0),
       _vm._v(" "),
-      _c(
-        "nav",
-        { staticClass: "navbar navbar-expand-md navbar-light bg-light" },
-        [
-          _c(
-            "div",
-            { staticClass: "container" },
-            [
-              _c(
-                "router-link",
-                { staticClass: "navbar-brand", attrs: { to: "/" } },
-                [_vm._v("ホーム")]
-              ),
-              _vm._v(" "),
-              _vm._m(1),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "collapse navbar-collapse justify-content-end",
-                  attrs: { id: "navbarNav" }
-                },
-                [
-                  _c("ul", { staticClass: "navbar-nav" }, [
+      _c("nav", { staticClass: "navbar navbar-expand-md" }, [
+        _c(
+          "div",
+          { staticClass: "container" },
+          [
+            _c(
+              "router-link",
+              { staticClass: "navbar-brand", attrs: { to: "/" } },
+              [_vm._v("ホーム")]
+            ),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "collapse navbar-collapse justify-content-end",
+                attrs: { id: "navbarNav" }
+              },
+              [
+                _c("ul", { staticClass: "navbar-nav" }, [
+                  _c(
+                    "li",
+                    { staticClass: "nav-item" },
+                    [
+                      _c("router-link", { attrs: { to: "/scenario" } }, [
+                        _vm._v("設定一覧")
+                      ])
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "nav-item dropdown" }, [
                     _c(
-                      "li",
-                      { staticClass: "nav-item" },
+                      "a",
+                      {
+                        staticClass: "dropdown-toggle",
+                        attrs: {
+                          href: "#",
+                          id: "navbarDropdownMenuLink",
+                          role: "button",
+                          "data-toggle": "dropdown",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "false"
+                        }
+                      },
                       [
-                        _c("router-link", { attrs: { to: "/scenario" } }, [
-                          _vm._v("設定一覧")
-                        ])
-                      ],
-                      1
+                        _vm._v(
+                          "\n                            モード選択\n                         "
+                        )
+                      ]
                     ),
                     _vm._v(" "),
                     _c(
-                      "li",
-                      { staticClass: "nav-item" },
+                      "div",
+                      {
+                        staticClass: "dropdown-menu",
+                        attrs: { "aria-labelledby": "navbarDropdownMenuLink" }
+                      },
                       [
-                        _c("router-link", { attrs: { to: "/mode" } }, [
-                          _vm._v("モード選択")
-                        ])
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/allSelect" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                全部お任せ\n                            "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/allSelect" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                設定のみ\n                            "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "dropdown-item",
+                            attrs: { to: "/allSelect" }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                役のみ\n                            "
+                            )
+                          ]
+                        )
                       ],
                       1
                     )
                   ])
-                ]
-              )
-            ],
-            1
-          )
-        ]
-      )
+                ])
+              ]
+            )
+          ],
+          1
+        )
+      ])
     ])
   ])
 }
@@ -22080,28 +22248,18 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
-    _c("div", { staticClass: "column mx-auto" }, [
-      _c("div", [
-        _c("h2", { staticClass: "text-center" }, [
-          _vm._v(_vm._s(_vm.column.title))
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "text-center" }, [
-          _vm._v(_vm._s(_vm.column.content))
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "d-flex align-items-end flex-column" },
-          [
-            _c("button-vue", {
-              staticClass: "mt-auto",
-              attrs: { button: _vm.column.button }
-            })
-          ],
-          1
-        )
-      ])
+    _c("div", { staticClass: "column mx-auto text-center" }, [
+      _c("h2", [_vm._v(_vm._s(_vm.column.title))]),
+      _vm._v(" "),
+      _c(
+        "section",
+        [
+          _c("p", [_vm._v(_vm._s(_vm.column.content))]),
+          _vm._v(" "),
+          _c("button-vue", { attrs: { button: _vm.column.button } })
+        ],
+        1
+      )
     ])
   ])
 }
@@ -22240,6 +22398,7 @@ var render = function() {
     _c(
       "button",
       {
+        staticClass: "btnComponent btnComponent-custom01 mb-3",
         attrs: { type: "submit" },
         on: {
           click: function($event) {
@@ -22249,7 +22408,11 @@ var render = function() {
           }
         }
       },
-      [_vm._v(_vm._s(_vm.button.message))]
+      [
+        _c("span", { staticClass: "btnComponent-custom01-front" }, [
+          _vm._v(_vm._s(_vm.button.message))
+        ])
+      ]
     )
   ])
 }
@@ -22282,11 +22445,33 @@ var render = function() {
       ]),
       _vm._v(" "),
       !_vm.timerOn
-        ? _c("button", { on: { click: _vm.start } }, [_vm._v("Start")])
+        ? _c(
+            "button",
+            {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
+              on: { click: _vm.start }
+            },
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Start")
+              ])
+            ]
+          )
         : _vm._e(),
       _vm._v(" "),
       _vm.timerOn
-        ? _c("button", { on: { click: _vm.stop } }, [_vm._v("Stop")])
+        ? _c(
+            "button",
+            {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
+              on: { click: _vm.stop }
+            },
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Stop")
+              ])
+            ]
+          )
         : _vm._e()
     ])
   ])
@@ -22315,41 +22500,156 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("main", [
     _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "row" },
+        { staticClass: "column mx-auto text-center" },
         [
-          _c("div", { staticClass: "home-image col-md-6" }),
+          _c("h2", [_vm._v("設定")]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "col-md-6 d-flex align-items-end flex-column" },
-            [
-              _c("p", [
-                _vm._v(
-                  "あああああああああああああああああああああああああああああ\n                    あああああああああああああああああああああああああああああ\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "home-image__button mt-auto" },
-                [_c("button-vue", { attrs: { button: _vm.button1 } })],
-                1
-              )
-            ]
-          ),
+          _vm._m(1),
           _vm._v(" "),
-          _c("column", { attrs: { column: _vm.column1 } }),
+          _c("button-vue", { attrs: { button: _vm.button1 } })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "column mx-auto text-center" },
+        [
+          _c("h2", [_vm._v("選べるモード")]),
           _vm._v(" "),
-          _c("column", { attrs: { column: _vm.column2 } })
+          _vm._m(2),
+          _vm._v(" "),
+          _c("button-vue", { attrs: { button: _vm.button2 } })
         ],
         1
       )
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column mx-auto text-center" }, [
+      _c("h2", [_vm._v("エチュ〜どん！とは")]),
+      _vm._v(" "),
+      _c("section", [
+        _c("p", [
+          _vm._v(
+            "\n                        台本はない、決められた設定の中で即興で演技をする"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        「エチュード演劇」\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        しかし、設定を考えるのはなかなか至難の技"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        設定を考えるだけで、貴重な時間を無駄にしてしまうかもしれません...\n                    "
+          )
+        ]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "\n                        「エチュード演劇」の設定を自動で生成してくれる"
+          ),
+          _c("br"),
+          _vm._v(
+            "\n                        それが「エチュ〜どん!」です\n                    "
+          )
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("p", [
+        _vm._v(
+          "\n                            「エチュ〜どん!」では、「設定」と「役」が自動で生成されます"
+        ),
+        _c("br"),
+        _vm._v(
+          "\n                            最大で10人まで役の振り分けが可能です\n                        "
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row column-box" }, [
+        _c("div", { staticClass: "column-container col-md-5" }, [
+          _c("h4", [_vm._v("設定")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("お題、場所、制限時間")])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column-container col-md-5" }, [
+          _c("h4", [_vm._v("役")]),
+          _vm._v(" "),
+          _c("p", [_vm._v("性格、ワード")])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("p", [_vm._v("目的に合わせて3つのモードを選択することができます")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row column-box" }, [
+        _c("div", { staticClass: "column-container col-md-4" }, [
+          _c("h4", [_vm._v("全部お任せ")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n                                お題、場所、制限時間、性格、ワード"
+            ),
+            _c("br"),
+            _vm._v(
+              "\n                                全ての設定をランダムに生成します    \n                            "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column-container col-md-4" }, [
+          _c("h4", [_vm._v("設定のみ")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("\n                                お題、場所、制限時間"),
+            _c("br"),
+            _vm._v(
+              "\n                                3つの項目をランダムに生成します    \n                            "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column-container col-md-4" }, [
+          _c("h4", [_vm._v("役のみ")]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v("\n                                性格、ワード、時間制限"),
+            _c("br"),
+            _vm._v(
+              "\n                                3つの項目をランダムに生成します    \n                            "
+            )
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -22881,25 +23181,35 @@ var render = function() {
           _c(
             "button",
             {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
               on: {
                 click: function($event) {
                   return _vm.startAll()
                 }
               }
             },
-            [_vm._v("Start!")]
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Start!")
+              ])
+            ]
           ),
           _vm._v(" "),
           _c(
             "button",
             {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
               on: {
                 click: function($event) {
                   return _vm.stopAll()
                 }
               }
             },
-            [_vm._v("Stop!")]
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Stop!")
+              ])
+            ]
           )
         ])
       ]),
@@ -22908,72 +23218,133 @@ var render = function() {
         _c("div", [
           _c("h2", { staticClass: "text-center" }, [_vm._v("設定")]),
           _vm._v(" "),
-          _c("h5", [
-            _vm._v(
-              "\n                    お題：" +
-                _vm._s(_vm.themes[_vm.tId]) +
-                "\n                    "
-            )
-          ]),
-          _vm._v(" "),
-          _c("h5", [_vm._v("場所：" + _vm._s(_vm.places[_vm.pId]))]),
-          _vm._v(" "),
-          _c("h5", [_vm._v("制限時間：" + _vm._s(_vm.timeLimit) + "分")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "d-flex justify-content-around" }, [
-            _c(
-              "button",
-              {
-                on: {
-                  click: function($event) {
-                    return _vm.startSetting()
-                  }
-                }
-              },
-              [_vm._v("Start!")]
-            ),
+          _c("section", [
+            _c("h5", [
+              _vm._v(
+                "\n                        お題：" +
+                  _vm._s(_vm.themes[_vm.tId]) +
+                  "\n                        "
+              )
+            ]),
             _vm._v(" "),
-            _c(
-              "button",
-              {
-                on: {
-                  click: function($event) {
-                    return _vm.stopSetting()
+            _c("h5", [_vm._v("場所：" + _vm._s(_vm.places[_vm.pId]))]),
+            _vm._v(" "),
+            _c("h5", [_vm._v("制限時間：" + _vm._s(_vm.timeLimit) + "分")]),
+            _vm._v(" "),
+            _c("div", { staticClass: "d-flex justify-content-around" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btnComponent btnComponent-custom01 mb-3",
+                  on: {
+                    click: function($event) {
+                      return _vm.startSetting()
+                    }
                   }
-                }
-              },
-              [_vm._v("Stop!")]
-            )
+                },
+                [
+                  _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                    _vm._v("Start!")
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btnComponent btnComponent-custom01 mb-3",
+                  on: {
+                    click: function($event) {
+                      return _vm.stopSetting()
+                    }
+                  }
+                },
+                [
+                  _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                    _vm._v("Stop!")
+                  ])
+                ]
+              )
+            ])
           ])
         ])
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "column mx-auto col-md-8" }, [
+        _c("h2", { staticClass: "text-center" }, [_vm._v("役")]),
+        _vm._v(" "),
         _c(
-          "ul",
+          "section",
+          { staticClass: "row" },
           _vm._l(_vm.number, function(n) {
-            return _c("li", { key: n }, [
-              _c("h2", { staticClass: "text-center" }, [
-                _vm._v(_vm._s(n) + "人目")
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "d-flex" }, [
-                _vm._v(
-                  "\n                            性格：\n                            "
-                ),
-                _c("h5", { staticClass: "character" }, [
-                  _vm._v(_vm._s(_vm.characters[n]))
-                ])
-              ]),
-              _vm._v(" "),
-              _c("h5", { staticClass: "d-flex" }, [
-                _vm._v(
-                  "\n                            ワード：\n                            "
-                ),
-                _c("h5", { staticClass: "keyword" }, [
-                  _vm._v(_vm._s(_vm.keywords[n]))
-                ])
-              ])
+            return _c("div", { key: n }, [
+              _vm.number === 1
+                ? _c("div", { staticClass: "col-12" }, [
+                    _c("div", { staticClass: "card text-center" }, [
+                      _c("div", { staticClass: "card-header" }, [
+                        _vm._v(_vm._s(n) + "人目")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("div", { staticClass: "card-text" }, [
+                          _c(
+                            "h5",
+                            { staticClass: "d-flex justify-content-center" },
+                            [
+                              _vm._v(
+                                "\n                                                性格：\n                                                "
+                              ),
+                              _c("h5", { staticClass: "character" }, [
+                                _vm._v(_vm._s(_vm.characters[n]))
+                              ])
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "h5",
+                            { staticClass: "d-flex justify-content-center" },
+                            [
+                              _vm._v(
+                                "\n                                                ワード：\n                                                "
+                              ),
+                              _c("h5", { staticClass: "keyword" }, [
+                                _vm._v(_vm._s(_vm.keywords[n]))
+                              ])
+                            ]
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                : _c("div", { staticClass: "col-md-5" }, [
+                    _c("div", { staticClass: "card text-center" }, [
+                      _c("div", { staticClass: "card-header" }, [
+                        _vm._v(_vm._s(n) + "人目")
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "card-body" }, [
+                        _c("div", { staticClass: "card-text" }, [
+                          _c("h5", { staticClass: "d-flex" }, [
+                            _vm._v(
+                              "\n                                                性格：\n                                                "
+                            ),
+                            _c("h5", { staticClass: "character" }, [
+                              _vm._v(_vm._s(_vm.characters[n]))
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c("h5", { staticClass: "d-flex" }, [
+                            _vm._v(
+                              "\n                                                ワード：\n                                                "
+                            ),
+                            _c("h5", { staticClass: "keyword" }, [
+                              _vm._v(_vm._s(_vm.keywords[n]))
+                            ])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
             ])
           }),
           0
@@ -22983,25 +23354,35 @@ var render = function() {
           _c(
             "button",
             {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
               on: {
                 click: function($event) {
                   return _vm.startRole()
                 }
               }
             },
-            [_vm._v("Start!")]
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Start!")
+              ])
+            ]
           ),
           _vm._v(" "),
           _c(
             "button",
             {
+              staticClass: "btnComponent btnComponent-custom01 mb-3",
               on: {
                 click: function($event) {
                   return _vm.stopRole()
                 }
               }
             },
-            [_vm._v("Stop!")]
+            [
+              _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                _vm._v("Stop!")
+              ])
+            ]
           )
         ])
       ]),
@@ -23018,25 +23399,35 @@ var render = function() {
               _c(
                 "button",
                 {
+                  staticClass: "btnComponent btnComponent-custom01 mb-3",
                   on: {
                     click: function($event) {
                       return _vm.startFirst()
                     }
                   }
                 },
-                [_vm._v("Start!")]
+                [
+                  _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                    _vm._v("Start!")
+                  ])
+                ]
               ),
               _vm._v(" "),
               _c(
                 "button",
                 {
+                  staticClass: "btnComponent btnComponent-custom01 mb-3",
                   on: {
                     click: function($event) {
                       return _vm.stopFirst()
                     }
                   }
                 },
-                [_vm._v("Stop!")]
+                [
+                  _c("span", { staticClass: "btnComponent-custom01-front" }, [
+                    _vm._v("Stop!")
+                  ])
+                ]
               )
             ])
           : _vm._e()
@@ -23080,9 +23471,7 @@ var render = function() {
       _vm._v(" "),
       _c("column", { attrs: { column: _vm.column2 } }),
       _vm._v(" "),
-      _c("column", { attrs: { column: _vm.column3 } }),
-      _vm._v(" "),
-      _c("column", { attrs: { column: _vm.column4 } })
+      _c("column", { attrs: { column: _vm.column3 } })
     ],
     1
   )

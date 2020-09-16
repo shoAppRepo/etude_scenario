@@ -1,6 +1,12 @@
 <template>
     <div>
-        <button type="submit" @click.stop.prevent="goPage()">{{button.message}}</button>
+        <button 
+            type="submit"
+            class="btnComponent btnComponent-custom01 mb-3" 
+            @click.stop.prevent="goPage()"
+        >
+        <span class="btnComponent-custom01-front">{{button.message}}</span>
+        </button>
     </div>
 </template>
 
